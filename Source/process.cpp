@@ -10,29 +10,29 @@ namespace Game {
 
 	const ObjectProfile* mainExtPT[] = {
 
-		//&CheckPoint::profile,
+		&CheckPoint::profile,
 		//&CannonBall::profile,
 		//&BlackBowserJR::profile,
 		//&TimePiece::profile,
-        //&BigCoin::profile,
-        //&BroozerBoss::profile,
-        //&boolossus::profile,
-        //&Fingor::profile,                   //stop putting this off already
-        //&Ninji::profile,
-        //&BowserHead::profile,
-        //&Grinder::profile,                  //fix model
-        //&FlyingMario::profile,
-        //&Villager::profile,
-        //&TorpedoTed::profile,
-        //&BeachHut::profile,
-        //&Decoration::profile,
-        //&ScuttleBuddy::profile,
-        //&GimmickController::profile,
-        //&FlipBlock::profile,                //faild attempt, to be removed
-        //&Larry::profile,      
-        //&BowserJRCutscene::profile,
-        &TrippleBlock::profile,
-        //&KoopalingProjectile::profile,
+        	//&BigCoin::profile,
+        	//&BroozerBoss::profile,
+        	//&boolossus::profile,
+        	//&Fingor::profile,                   //stop putting this off already
+        	//&Ninji::profile,
+        	//&BowserHead::profile,
+        	//&Grinder::profile,                  //fix model
+        	//&FlyingMario::profile,
+        	//&Villager::profile,
+        	//&TorpedoTed::profile,
+        	//&BeachHut::profile,
+        	//&Decoration::profile,
+        	//&ScuttleBuddy::profile,
+        	//&GimmickController::profile,
+        	//&FlipBlock::profile,                //faild attempt, to be removed
+        	//&Larry::profile,      
+        	//&BowserJRCutscene::profile,
+        	&TrippleBlock::profile,
+        	//&KoopalingProjectile::profile,
 
 	};
 
@@ -93,7 +93,7 @@ ncp_over(idAddr, 0) static const u16 class##ObjID = class::objectID; \
 ncp_over(bankAddr, 0) static const ObjectBank class##ObjBank = class::objectBank;
 
 //         0x020C22B8  0x020C529C  0x020C5010  00
-//NSMB_OBJDECL(0x020C22CC, 0x020C5364, 0x020C5024, 10, CheckPoint); // Stage object 10 will now spawn CheckPoint
+NSMB_OBJDECL(0x020C22CC, 0x020C5364, 0x020C5024, 10, CheckPoint); // Stage object 10 will now spawn CheckPoint
 //NSMB_OBJDECL(0x020C22CE, 0x020C5378, 0x020C5026, 11, CannonBall); // Here all the other unused slots you can use
 //NSMB_OBJDECL(0x020C22D0, 0x020C538C, 0x020C5028, 12, BlackBowserJR);
 //NSMB_OBJDECL(0x020C22D2, 0x020C53A0, 0x020C502A, 13, TimePiece);
