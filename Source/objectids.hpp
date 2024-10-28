@@ -9,7 +9,7 @@
 namespace ObjectID {
 
 	static constexpr u16 Base				= 0x182;
-	//static constexpr u16 CheckPoint		    = Base + 0x0;
+	static constexpr u16 CheckPoint		    = Base + 0x0;
 	//static constexpr u16 CannonBall			= Base + 0x1;
     //static constexpr u16 BlackBowserJR		= Base + 0x2;
 	//static constexpr u16 TimePiece          = Base + 0x3;
