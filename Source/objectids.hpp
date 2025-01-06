@@ -8,11 +8,11 @@
 
 namespace ObjectID {
 
-	static constexpr u16 Base				= 0x182;
-	static constexpr u16 CheckPoint		    = Base + 0x0;
-	//static constexpr u16 CannonBall			= Base + 0x1;
-    //static constexpr u16 BlackBowserJR		= Base + 0x2;
-	//static constexpr u16 TimePiece          = Base + 0x3;
+	static constexpr u16 Base		  = 0x182;
+	static constexpr u16 CheckPoint		  = Base + 0x0;
+	//static constexpr u16 CannonBall	  = Base + 0x1;
+    //static constexpr u16 BlackBowserJR          = Base + 0x2;
+	static constexpr u16 TimePiece            = Base + 0x3;
 	//static constexpr u16 BigCoin            = Base + 0x4;
 	//static constexpr u16 BroozerBoss        = Base + 0x5;
 	//static constexpr u16 boolossus          = Base + 0x6;
