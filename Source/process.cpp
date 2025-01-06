@@ -3,8 +3,9 @@
 
 #include "nsmb/entity/object.hpp"
 
-
+#include "actors/TimePiece/TimePiece.hpp"
 #include "actors/MultiBlocks/TrippleBlock.hpp"
+#include "actors/CheckPoint/CheckPoint.hpp"
 
 namespace Game {
 
@@ -13,7 +14,7 @@ namespace Game {
 		&CheckPoint::profile,
 		//&CannonBall::profile,
 		//&BlackBowserJR::profile,
-		//&TimePiece::profile,
+		&TimePiece::profile,
         	//&BigCoin::profile,
         	//&BroozerBoss::profile,
         	//&boolossus::profile,
@@ -96,7 +97,7 @@ ncp_over(bankAddr, 0) static const ObjectBank class##ObjBank = class::objectBank
 NSMB_OBJDECL(0x020C22CC, 0x020C5364, 0x020C5024, 10, CheckPoint); // Stage object 10 will now spawn CheckPoint
 //NSMB_OBJDECL(0x020C22CE, 0x020C5378, 0x020C5026, 11, CannonBall); // Here all the other unused slots you can use
 //NSMB_OBJDECL(0x020C22D0, 0x020C538C, 0x020C5028, 12, BlackBowserJR);
-//NSMB_OBJDECL(0x020C22D2, 0x020C53A0, 0x020C502A, 13, TimePiece);
+NSMB_OBJDECL(0x020C22D2, 0x020C53A0, 0x020C502A, 13, TimePiece);
 //NSMB_OBJDECL(0x020C22D4, 0x020C53B4, 0x020C502C, 14, BigCoin);
 //NSMB_OBJDECL(0x020C22D6, 0x020C53C8, 0x020C502E, 15, BroozerBoss);
 //NSMB_OBJDECL(0x020C22D8, 0x020C53DC, 0x020C5030, 16, boolossus);
