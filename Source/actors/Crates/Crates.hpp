@@ -22,6 +22,7 @@ public:
 	
 	static void bottomColliderCallback(StageActor& self, StageActor& other);
 
+	virtual void onMegaGroundPound() override;
 
     static bool loadResources();
     virtual bool onPrepareResources();
@@ -54,6 +55,11 @@ public:
     LineSensorH bottomSensor;
 
 	Vec3 newPos[9];
+
+	void activateEvent(u32 id){
+		u64 *activatorBitmask = (u64*)(0x0208AF3C);
+		*activatorBitmask |= 1LL << (id-1);
+	}
 
     private:
 	    Model model;
