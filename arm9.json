@@ -1,0 +1,123 @@
+{
+	"$arm_flags": "-mcpu=arm946e-s $${arm_flags}",
+	"$c_flags": "${arm_flags} $${c_flags} -DSDK_ARM9 -Darm9_start=0x021901E0",
+	"$cpp_flags": "${c_flags} $${cpp_flags}",
+	"$asm_flags": "${arm_flags} $${asm_flags}",
+	"$ld_flags": "$${ld_flags}",
+	
+	"c_flags": "${c_flags}",
+	"cpp_flags": "${cpp_flags}",
+	"asm_flags": "${asm_flags}",
+	"ld_flags": "${ld_flags}",
+	
+	"includes": [
+		["include", false],
+		["source", false],
+		["source/ov76", false],
+		["source/ov83", false],
+		["source/ov84", false],
+		["source/ov85", false],
+		["source/ov61", false],
+		["source/ov62", false],
+		["source/ov48", false],
+		["source/ov101", false],
+		["source/ov124", false]
+
+
+
+
+
+	],
+	"regions": [{
+		"dest": "main",
+		"compress": true,
+		"sources": [["source/main", true]]
+
+	},
+	{
+		"dest": "ov83",
+		"mode": "append",
+		"length": "0x4180",
+		"compress": false,
+		"sources": [
+			["source/ov83", false]
+		]
+	},
+	{
+		"dest": "ov76",
+		"mode": "append",
+		"length": "0x4180",
+		"compress": false,
+		"sources": [
+			["source/ov76", false]
+		]
+	},
+	{
+		"dest": "ov84",
+		"mode": "append",
+		"length": "0x4180",
+		"compress": false,
+		"sources": [
+			["source/ov84", false]
+		]
+	},
+	{
+		"dest": "ov61",
+		"mode": "append",
+		"length": "0x19040",
+		"compress": false,
+		"sources": [
+			["source/ov61", false]
+		]
+	},
+	{
+		"dest": "ov62",
+		"mode": "append",
+		"length": "0x19040",
+		"compress": false,
+		"sources": [
+			["source/ov62", false]
+		]
+	},
+
+	{
+		"dest": "ov85",
+		"mode": "append",
+		"length": "0x4180",
+		"compress": false,
+		"sources": [
+			["source/ov85", false]
+		]
+	},
+	{
+		"dest": "ov48",
+		"mode": "append",
+		"length": "0xbbe0",
+		"compress": false,
+		"sources": [
+			["source/ov48", false]
+		]
+	},
+	{
+		"dest": "ov124",
+		"mode": "append",
+		"length": "0x3a20",
+		"compress": false,
+		"sources": [
+			["source/ov124", false]
+		]
+	},
+	{
+		"dest": "ov101",
+		"mode": "append",
+		"length": "0x43e0",
+		"compress": false,
+		"sources": [
+			["source/ov101", false]
+		]
+	}],
+
+	
+	"arenaLo": "0x02065F10",
+	"symbols": "symbols9.x"
+}
